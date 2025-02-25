@@ -9,6 +9,7 @@ const App = () => {
 
   const total = good + neutral + bad;
   const average = total == 0 ? 0 : (good - bad) / total;
+  const porcentaje = (good/total) * 100;
 
   return (
     <div>
@@ -24,6 +25,7 @@ const App = () => {
       <p>bad {bad}</p>
       <p>all {total}</p>
       <p>average {average}</p>
+      <p>porcentaje {porcentaje}%</p>
     </div>
   )
 }
